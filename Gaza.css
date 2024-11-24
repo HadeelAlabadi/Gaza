@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+/*General Settings*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+/*background style*/
+body {
+    background-color: black;
+}
+
+/*navigation bar style*/
+.navigation-bar {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*Navigation menu style*/
+nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-flex;
+    margin-left: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-family: "Audiowide";
+    font-weight: 400;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: tomato;
+    transition: 0.7s;
+    text-decoration: underline white 2px solid;
+
+
+}
+
+/*Video style*/
+.video-gaza {
+    width: 100%;
+    margin-top: -580px;
+    height: 600px;
+}
+
+/*Title and text style*/
+.head {
+    margin-top: 50px;
+    color: tomato;
+    text-align: center;
+    font-size: 34px;
+
+
+}
+
+
+
+
+.text {
+    color: aliceblue;
+    margin: 10px 100px;
+    margin-top: 40px;
+    font-size: 20px;
+    word-spacing: 5px;
+    line-height: 30px;
+
+}
+
+/*Search container style*/
+.search-container:hover >.search-text{
+    width: 240px;
+    padding:0 6px ;
+}
+.search-container:hover >.search-bnt{
+    background: whitesmoke;
+}
+
+
+.search-container {
+    position: absolute;
+    width: 60%;
+    align-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(120%, -50%);
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.search-bnt {
+    color: tomato;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    float: right;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: black;
+
+}
+
+.search-text {
+    border: none;
+    outline: none;
+    background: none;
+    float: right;
+    padding: 0;
+    right: -20px;
+    line-height: 40px;
+    position: absolute;
+    color: whitesmoke;
+    font-size: 16px;
+    transition: 0.4s;
+    width:0px;
+
+}
